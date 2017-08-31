@@ -21,7 +21,7 @@ var bestRest = angular.module('bestRestApp', ["ngRoute", "ui.router"]).config(fu
             },
             // another child view
             'vouchers@main': {
-                templateUrl: './views/vouchers.html'
+                templateUrl: '../views/vouchers.html'
             }
         }
     });
