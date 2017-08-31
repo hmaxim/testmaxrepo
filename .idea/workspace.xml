@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49af871f-d5d2-42a4-9649-116a2b7001b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="49af871f-d5d2-42a4-9649-116a2b7001b1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -122,24 +120,6 @@
             <path>
               <item name="bestRest" type="b2602c69:ProjectViewProjectNode" />
               <item name="bestRest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bestRest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bestRest" type="462c0819:PsiDirectoryNode" />
-              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bestRest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bestRest" type="462c0819:PsiDirectoryNode" />
-              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bestRest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bestRest" type="462c0819:PsiDirectoryNode" />
-              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -273,12 +253,12 @@
       <workItem from="1504092946067" duration="15373000" />
       <workItem from="1504114944625" duration="1862000" />
       <workItem from="1504171456585" duration="4750000" />
-      <workItem from="1504176229886" duration="16900000" />
+      <workItem from="1504176229886" duration="17377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126183000" />
+    <option name="totallyTimeSpent" value="126660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-772" width="1309" height="772" extended-state="6" />
