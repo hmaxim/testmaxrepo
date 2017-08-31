@@ -1,0 +1,88 @@
+<div class="col-lg-3 options">
+    <div class="options-select">
+        <form class="form-group">
+            <p>Выбор страны</p>
+            <select id="country">
+                <option value="israel">Израиль</option>
+            </select>
+            <p>Выбор валюты</p>
+            <select id="currencies">
+                <option value="shekel">Израильский шекель</option>
+            </select>
+        </form>
+    </div>
+    <div>
+        <p>Дедуктивный метод, конечно, трансформирует трансцендентальный мир, однако Зигварт считал критерием
+            истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире.</p>
+    </div>
+</div>
+<div class="col-lg-9 vouchers-field">
+    <div class="container col-lg-12">
+        <div class="row">
+            <div class="container vouchers-field-title col-lg-12">
+                <h4>Покупка купонов</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container text-center col-lg-12">
+                <div class="col-lg-3 vouchers-title" ng-repeat="voucher in vouchersType">
+                    <h4>{{voucher.name}}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container text-center col-lg-12">
+                <div class="row">
+                    <div class="container col-lg-12">
+                        <div class="vouchers-field-elements vouchers-circle col-lg-3"
+                             ng-repeat="voucher in vouchersType">
+                            <h2>{{voucher.cost}}$</h2>
+                            <div class="vouchers-quantity">
+                                <span>{{orderArr[$index]}}</span>
+                            </div>
+                        </div>
+                        <div class="vouchers-side-text text-left col-lg-3">
+                            <p>Аксиома силлогизма философски контролирует гравитационный парадокс. Исчисление
+                                предикатов
+                                заполняет
+                                сенсибельный позитивизм, при этом буквы А, В, I, О символизируют соответственно
+                                общеутвердительное,
+                                общеотрицательное, частноутвердительное.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container col-lg-12">
+                        <div class="vouchers-field-elements btn-group col-lg-3" ng-repeat="voucher in vouchersType">
+                            <button ng-click="removeOrderCount($index)"><i class="fa fa-minus" aria-hidden="true"></i>
+                            </button>
+                            <button ng-click="addOrderCount($index)"><i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container col-lg-12">
+                <img id="advertisement_logo" src="images/u75.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="vouchers-payment col-lg-12">
+                <div class="col-lg-5">
+                    <p>Выбрано: {{totalCountVouchers()}} позиций <span ng-repeat="count in vouchersType"> | {{orderArr[$index]+" "+ count.name}}</span>
+                    </p>
+                </div>
+                <div class="col-lg-offset-7">
+                    <div class="col-lg-6">
+                        <input type="text" disabled value= {{totalSumVouchers()}}>
+                    </div>
+                    <div class="col-lg-6">
+                        <button class="btn" ng-click="click()">PAY</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

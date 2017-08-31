@@ -1,0 +1,139 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-top{
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    background-color: lightgrey;
+
+}
+
+.logo img{
+    width: 60%;
+    height: auto;
+    margin-top: 8%;
+}
+
+.nav{
+    margin-top: 6%;
+}
+
+.nav input{
+    margin-bottom: 1%;
+    padding-left: 2%;
+}
+
+.nav button{
+    border: 1px solid black;
+}
+
+.main-line{
+    height: 5vh;
+    background-color: darkgray;
+}
+
+
+
+.options{
+    background-color: #f2f2f2;
+    height:75vh;
+}
+
+.options-select{
+    margin-top: 7vh;
+}
+
+.options-select select{
+    width: 100%;
+    margin-bottom: 4vh;
+}
+
+.vouchers-field{
+    background-color: lightgrey;
+    position: relative;
+    height:75vh;
+
+}
+
+.vouchers-field-title h4{
+    font-weight: bold;
+}
+
+.vouchers-field-elements{
+    width: 10vw;
+    margin: 1vw 6vw 0 0;
+}
+
+.vouchers-field-elements button{
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: white;
+}
+
+.vouchers-field-elements button:active{
+    color: black;
+}
+
+.vouchers-quantity{
+    width: 6vw;
+    margin: auto;
+    border-top: 1px solid black;
+}
+
+.vouchers-side-text{
+    width: 20vw;
+    height:10vw;
+}
+
+.vouchers-circle{
+    height:10vw;
+    border-radius: 50%;
+    background-color: darkgray;
+}
+
+.vouchers-circle h2{
+ margin: 40% 0 16% 0;
+}
+
+.vouchers-title{
+    width: 10vw;
+    margin-right: 6vw;
+}
+
+.vouchers-title h4{
+    font-weight: bold;
+    color: white;
+}
+
+#advertisement_logo{
+    width: 100%;
+    height: 10vh;
+    margin: 2vw 0 4vw 0;
+}
+
+.vouchers-payment input{
+    width: 13.5vw;
+    height: 2.5vw;
+}
+
+.vouchers-payment button{
+    width: 13.5vw;
+    height: 2.5vw;
+}
+
+.vouchers-payment p{
+    padding-top: 0.5vw;
+}
