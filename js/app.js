@@ -1,4 +1,4 @@
-var mealDealApp = angular.module('mealDealApp', ["ngRoute"])
+var mealDealApp = angular.module('mealDealApp', ["ngRoute","angularSpinner"])
     .config(function ($routeProvider) {
         $routeProvider.when('/',
             {

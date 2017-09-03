@@ -68,3 +68,48 @@ $scope.click = function () {
 
 
 }
+
+
+$scope.click = function () {
+    var voucherSet = {};
+    var Order = {};
+    for (var i = 0; i < $scope.vouchersType.length; i++) {
+        Order[$scope.vouchersType[i].id] = $scope.orderArr[i];
+        voucherSet = {
+            totalCost: $scope.totalCost,
+            map: Order
+        };
+
+    }
+
+    $http.post('https://meal-deal.herokuapp.com/api/voucher/set/create', voucherSet, {
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": $scope.accessToken
+        }
+    }).then(function successCallback(response) {
+        payPalObj.id = response.data.id;
+        payPalObj.resource.amount.total = $scope.totalCost * 100;
+        payPalObj.custom = $scope.userId;
+        sendPayment();
+    }, function errorCallback(response) {
+        console.log(response);
+    });
+
+    console.log(payPalObj);
+
+
+    function sendPayment() {
+        $http.post('https://meal-deal.herokuapp.com/api/sale/completed', payPalObj, {
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(function successCallback(response) {
+            console.log(response);
+        }, function errorCallback(response) {
+            console.log(response);
+        });
+    }
+
+}
+
